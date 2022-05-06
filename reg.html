@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="syle.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div id="reg">
+        <div class="reg">
+            <form action="">
+                <h1>CREATE ACCOUNT</h1>
+                <div class="items">
+                    <label for="name">Enter Fullname(s)</label><p id="nameErr" class="error"></p>
+                    <input type="text" class="control" id="fname" placeholder="e.g Ellen">
+                </div>
+                <div class="items">
+                    <label for="surname">Enter Lastname(s)</label><p id="surErr" class="error"></p>
+                    <input type="text" class="control" id="last" placeholder="e.g Ellen">
+                </div>
+                <div class="items">
+                    <label for="cell">Cellphone Number</label><p id="cellErr" class="error"></p>
+                    <input type="text" class="control" id="cell" placeholder="+27 0000 0000">
+                </div>
+                <div class="items">
+                    <label for="email">Email Address</label><p id="emailErr" class="error"></p>
+                    <input type="text" class="control" id="email" placeholder="example@eg.com">
+                </div>
+                <div class="items">
+                    <label for="pass">Create Password</label><p id="passErr" class="error"></p>
+                    <input type="password" class="control" id="pass" placeholder="********">
+                </div>
+                <div class="items">
+                    <label for="confirm">Confirm Password</label><p id="conErr" class="error"></p>
+                    <input type="password" class="control" id="conf" placeholder="********">
+                </div>
+                <div class="items">
+                    <label>Select Image File</label><p id="imgErr" class="error"></p>
+                    <input type="file" class="control img" id="img" name="image">
+                </div>
+               
+                <button type="button" onclick="saveData()" id="submit">Submit</button>
+            </form>
+            <!-- <button type="button" onclick="saveData()" id="submit">Submit</button> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<html>
