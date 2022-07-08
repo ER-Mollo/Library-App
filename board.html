@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="syle.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="left">
+            <div class="top">
+                <div class="info">
+                    <img id="userImg" src="./images/img.jpg">
+                    <p>Welcome Back<br>
+                    <nav id ="user">Sarah</nav></p>
+                </div>
+            </div>
+            
+            <ul>
+
+                <li><a id="mb" href="">My KINDLE board</a></li>
+                <li><a id="c" onclick="collection()">Collection</a></li>
+                <li><a href="" data-toggle="modal" data-target="#cartModal">Cart</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <footer>
+                <p>Product By</p>
+                
+            </footer>
+        </div>
+
+        <div class="modal fade" id="cartModal" role="dialog">
+            <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Cart</h4>
+                </div>
+                <div class="modal-body">
+                   
+                 </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================Main board================================================ -->
+        <div class="right">
+            <div class="top">
+                <div class="list">
+                    <div class="items">
+                        <div>
+                            <a href="">LOGO</a></li>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"></button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="readText" id = "readText">Read Books</div> 
+                    <div class="read">
+                
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b1.jpg">
+                                </div>
+                                <div>
+                                    <h1>The Silent Patient</h1>
+                                    <p>193 pages . Chapter 13 . Last Read</p>
+                                </div> 
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b8.jpg">
+                                </div>
+                                <div>
+                                    <h1>Cloud Cuckoo Land</h1>
+                                    <p>193 pages . Chapter 13 . Last Read</p>
+                                </div> 
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b7.jpg">
+                                </div>
+                                <div>
+                                    <h1>A Briefer History</h1>
+                                    <p>193 pages . Chapter 13 . Last Read</p>
+                                </div> 
+                            </div>  
+                        </div>
+
+                </div>
+                <div class="nr" id = "nr">New Release</div>
+                <div class="Nr">
+                    <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b6.jpg">
+                                </div>
+                                <div>
+                                    <h1>The Alchemist</h1>
+                                    <p>Paulo Coelho</p>
+                                </div> 
+                                <button onclick="drama()">Drama</button>
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b2.jpg">
+                                </div>
+                                <div>
+                                    <h1>The Lion The Witch</h1>
+                                    <p>C.S Lewis</p>
+                                </div> 
+                                <button onclick="horror()">Horror</button>
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b3.jpg">
+                                </div>
+                                <div>
+                                    <h1>Harry Porter</h1>
+                                    <p>J,K Rowling</p>
+                                </div> 
+                                <button onclick="mistery()">mistery</button>
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b4.jpg">
+                                </div>
+                                <div>
+                                    <h1>The Hobbit</h1>
+                                    <p>J.R.R Tolkien</p>
+                                </div> 
+                                <button onclick="action()">Action</button>
+                            </div>  
+                        </div>
+
+                        <div class="book">
+                            <div class="books">
+                                <div>
+                                    <img src="./images/b5.jpg">
+                                </div>
+                                <div>
+                                    <h1>The Brief History of Time</h1>
+                                    <p>Stephen Hawking</p>
+                                </div>
+                                <button onclick="history()">History</button> 
+                            </div>  
+                        </div>
+
+
+                    <div class="author">
+                            <div class="content">
+                                <h1>Famous Authors</h1>
+                                <div class="fa">
+                                    <div>
+                                        <img src="./images/img.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h2>Stephen Hawking</h2>
+                                        <p>33 Books</p>
+                                    </div>
+                                </div>
+
+                                <div class="fa">
+                                    <div>
+                                        <img src="./images/img.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h2>J,K Rowling</h2>
+                                        <p>33 Books</p>
+                                    </div>
+                                </div>
+
+                                <div class="fa">
+                                    <div>
+                                        <img src="./images/img.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <h2>J,K Rowling</h2>
+                                        <p>33 Books</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- =========================================================Collection===================================================== -->
+            <div id = "drama" class="cart">
+                <div class = "genre">
+                    <div class="header"><h1>drama</h1></div>
+                    <div class="books">
+                        <div class = "book">
+                            <img src = "images/b1.jpg"  data-toggle="modal" data-target="#myModal">
+                            <div><strong>Name of the book</strong><br>
+                            <small>price</small>
+                        </div>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                            
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Add Cart</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h2 class="descrip">The Silent Patient (R519)</h2>
+                                        <p>The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <strong class="items header column">BOOK</strong>
+
+                                        <strong class="ISBN header column">ISBN</strong>
+
+                                        <strong class="quant header column">QUANTITY</strong>
+                                        
+                                        <strong class="price header column">Total</strong>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </div>
+                                    <div class="cart-items">
+                                        <nav class="item column">
+                                            <img src="./images/b1.jpg" width="20px" height="50px">
+                                            <span>The silent patient</span>
+                                        </nav>
+
+                                        <span class="ISBN column">000000000000</span>
+
+                                        <input id="value" class="quant column" type="number" value="1" id="num" onclick="silent()">
+                                        
+                                        <span id ="price" class="price column">519.00</span>
+                                    
+                                                                           
+                                    </div>
+                                    
+                                    
+                                    
+                                 </div>
+
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Add to cart</button>
+                                </div>
+                                
+
+                            </div>
+                            
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                        <div class = "book">
+                            <img src = "images/b1.jpg"  data-toggle="modal" data-target="#myModal">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+
+                        <div class = "book">
+                            <img img src = "images/b1.jpg"  data-toggle="modal" data-target="#myModal">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class = "genre">
+                    <div class="header"><h1>Action</h1></div>
+                    <div class="books">
+                        <div class = "book">
+                            <img src = "images/b2.jpg" data-toggle="modal" data-target="#mModal">
+                            <div><strong>Name of the book</strong><br>
+                        <small>Author</small></div>
+                        
+                        </div>
+                        <div class = "book">
+                            <img src = "images/b2.jpg" data-toggle="modal" data-target="#mModal">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+
+                        <div class = "book">
+                            <img src = "images/b2.jpg" data-toggle="modal" data-target="#mModal">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+                        </div>
+
+                        <div class="modal fade" id="mModal" role="dialog">
+                            <div class="modal-dialog">
+                            
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Add Cart</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h2 class="descrip">The Lion the Witch and the wardrope (R400)</h2>
+                                        <p>The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <strong class="items header column">BOOK</strong>
+
+                                        <strong class="ISBN header column">ISBN</strong>
+
+                                        <strong class="quant header column">QUANTITY</strong>
+                                        
+                                        <strong class="price header column">Total</strong>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </div>
+                                    <div class="cart-items">
+                                        <nav class="item column">
+                                            <img src="./images/b2.jpg" width="20px" height="50px">
+                                            <span>The Lion the Witch and the wardrope</span>
+                                        </nav>
+
+                                        <span class="ISBN column">0000001111111</span>
+
+                                        <input id="" class="quant column" type="number" value="1">
+                                        
+                                        <span class="price column">400.00</span>
+                                    
+                                                                           
+                                    </div>
+                                    
+                                    
+                                    
+                                 </div>
+
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Add to cart</button>
+                                </div>
+                                
+
+                            </div>
+                            
+                            </div>
+                        </div>
+
+                </div>
+
+
+
+
+                <div class = "genre">
+                    <div class="header"><h1>History</h1></div>
+                    <div class="books">
+                        <div class = "book">
+                            <img src = "images/b3.jpg">
+                            <div><strong>Name of the book</strong><br>
+                        <small>Author</small></div>
+                        
+                        </div>
+                        <div class = "book">
+                            <img src = "images/b3.jpg">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+
+                        <div class = "book">
+                            <img src = "images/b3.jpg">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+                        </div>
+                        
+                </div>
+
+                <div class = "genre">
+                    <div class="header"><h1>Horror</h1></div>
+                    <div class="books">
+                        <div class = "book">
+                            <img src = "images/b4.jpg">
+                            <div><strong>Name of the book</strong><br>
+                        <small>Author</small></div>
+                        
+                        </div>
+                        <div class = "book">
+                            <img src = "images/b4.jpg">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+
+                        <div class = "book">
+                            <img src = "images/b4.jpg">
+                            <div><strong>Name of the book</strong><br>
+                            <small>Author</small></div>
+                        </div>
+                </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+       
+    </div>
+        </div>
+        
+    </div>
+    <script src="board.js"></script>
+</body>
+</html>
